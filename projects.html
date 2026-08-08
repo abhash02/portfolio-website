@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Abhash Gupta | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="projects-page">
+  
+  <!-- Navbar - Fixed directly to Viewport -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="./index.html" class="logo">Abhash Gupta</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#about" class="nav-link">About</a>
+        <a href="./projects.html" class="nav-link active">Projects</a>
+        <a href="./index.html#workflow" class="nav-link">Workflow</a>
+        <a href="./index.html#skills" class="nav-link">Skills &amp; Exp</a>
+        <a href="./index.html#contact" class="btn-primary nav-contact-btn">
+          Get in touch
+          <span class="btn-arrow">→</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content Wrapper for Projects Page -->
+  <div id="content-wrapper">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO HEADER & OVERVIEW (Top Title & Subtext + Filters)
+         ========================================================================== -->
+    <section class="projects-hero-section">
+      <div class="projects-hero-container">
+        
+        <div class="section-tag-pill">
+          <span class="tag-dot"></span>
+          <span>FEATURED AI PROJECTS</span>
+        </div>
+
+        <div class="projects-hero-grid">
+          <div class="projects-hero-left">
+            <h1 class="projects-hero-title">
+              Building <span class="highlight-orange">Production-Ready</span><br>AI Systems.
+            </h1>
+          </div>
+          <div class="projects-hero-right">
+            <p class="projects-hero-subtext">
+              A curated collection of AI, machine learning, speech intelligence, computer vision, and data-driven applications designed to solve real-world problems through scalable engineering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Key Metrics Counter Strip -->
+        <div class="projects-stats-strip">
+          <div class="stat-box">
+            <span class="stat-number">07+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">AI</span>
+            <span class="stat-label">Solutions</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">Production</span>
+            <span class="stat-label">Ready</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">Real-World</span>
+            <span class="stat-label">Applications</span>
+          </div>
+        </div>
+
+        <!-- Interactive Category Filter Bar -->
+        <div class="filter-bar-wrapper">
+          <span class="filter-label">Browse Projects:</span>
+          <div class="filter-pills-container">
+            <button class="filter-pill active" data-filter="all">Featured (6)</button>
+            <button class="filter-pill" data-filter="ai-ml">Machine Learning &amp; AI</button>
+            <button class="filter-pill" data-filter="speech">Speech &amp; Audio</button>
+            <button class="filter-pill" data-filter="nlp">NLP &amp; Automation</button>
+            <button class="filter-pill" data-filter="analytics">Data Analytics</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: COMPREHENSIVE PROJECTS SHOWCASE GRID
+         ========================================================================== -->
+    <section class="projects-grid-section">
+      <div class="projects-grid-container">
+        
+        <div class="projects-grid-expanded">
+
+          <!-- Project Card 1: Sentinel – Agentic AI Platform -->
+          <div class="project-card-expanded" data-category="ai-ml agentic" data-metrics="Multi-Agent Orchestration • Vulnerability Detection • Auto Fix Generation • Human Approval" data-full-desc="Security-first multi-agent AI platform that reviews pull requests, detects vulnerabilities, generates secure code fixes, and supports developer approval workflows.">
+            <div class="card-media-wrapper">
+              <img src="./project_sentinel.png" alt="Sentinel – Agentic AI Platform">
+              <span class="card-badge badge-purple">AGENTIC AI</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Google ADK</span>
+                <span class="tech-chip">Gemini</span>
+                <span class="tech-chip">Multi-Agent AI</span>
+              </div>
+              <h3 class="project-card-title">Sentinel – Agentic AI Platform</h3>
+              <p class="project-card-desc">
+                Security-first multi-agent AI platform that reviews pull requests, detects vulnerabilities, generates secure code fixes, and supports developer approval workflows.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/sentinel-code-reviewer" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 2: AI Resume Analyzer -->
+          <div class="project-card-expanded" data-category="nlp ai-ml" data-metrics="ATS Scoring • Keyword Matching • Skill Gap Analysis" data-full-desc="Analyzes resumes against job descriptions using ATS scoring, keyword matching, and intelligent skill gap analysis.">
+            <div class="card-media-wrapper">
+              <img src="./project_resume_analyzer.png" alt="AI Resume Analyzer Web Application">
+              <span class="card-badge badge-blue">Flask Web App</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Flask</span>
+                <span class="tech-chip">NLP</span>
+              </div>
+              <h3 class="project-card-title">AI Resume Analyzer Web App</h3>
+              <p class="project-card-desc">
+                Analyzes resumes against job descriptions using ATS scoring, keyword matching, and intelligent skill gap analysis.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/ai-resume-analyzer" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 3: Student Performance Prediction System -->
+          <div class="project-card-expanded" data-category="ai-ml analytics" data-metrics="Model Comparison • Feature Engineering • REST APIs • React UI" data-full-desc="Predicts student exam performance using machine learning with model comparison, feature engineering, REST APIs, and an interactive React dashboard.">
+            <div class="card-media-wrapper">
+              <img src="./project_student_performance.png" alt="Student Performance Prediction System">
+              <span class="card-badge badge-green">ML &amp; React App</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-learn</span>
+                <span class="tech-chip">Flask</span>
+                <span class="tech-chip">React</span>
+              </div>
+              <h3 class="project-card-title">Student Performance Prediction System</h3>
+              <p class="project-card-desc">
+                Predicts student exam performance using machine learning with model comparison, feature engineering, REST APIs, and an interactive React dashboard.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/student-performance-prediction" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 4: AI-Powered Financial Fraud Detection System -->
+          <div class="project-card-expanded extra-project" data-category="ai-ml analytics" data-metrics="Single &amp; Bulk Transaction Prediction • Model Performance Visualization • Interactive Streamlit Dashboard" data-full-desc="Detects fraudulent credit card transactions using machine learning with single transaction prediction, bulk CSV analysis, model performance visualization, and an interactive Streamlit dashboard.">
+            <div class="card-media-wrapper">
+              <img src="./project_fraud_detection.png" alt="AI-Powered Financial Fraud Detection System">
+              <span class="card-badge badge-orange">💳 FRAUD DETECTION</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-learn</span>
+                <span class="tech-chip">Streamlit</span>
+                <span class="tech-chip">Pandas</span>
+              </div>
+              <h3 class="project-card-title">AI-Powered Financial Fraud Detection System</h3>
+              <p class="project-card-desc">
+                Detects fraudulent credit card transactions using machine learning with single transaction prediction, bulk CSV analysis, model performance visualization, and an interactive Streamlit dashboard.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/AI-Financial-Fraud-Detection-System" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 5: Youtube Trend Analysis -->
+          <div class="project-card-expanded extra-project" data-category="analytics" data-metrics="YouTube Data API v3 • Exploratory Data Analysis • Insights &amp; Visualizations" data-full-desc="Fetches India's top trending YouTube videos using the YouTube Data API v3 and performs exploratory data analysis with NumPy, Pandas, and Matplotlib. Visualizes engagement patterns, category distribution, publishing trends, and channel performance through interactive insights and data-driven visualizations.">
+            <div class="card-media-wrapper">
+              <img src="./project_youtube_trend_analysis.png" alt="Youtube Trend Analysis">
+              <span class="card-badge badge-red">DATA ANALYTICS</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">NumPy</span>
+                <span class="tech-chip">Pandas</span>
+                <span class="tech-chip">Matplotlib</span>
+              </div>
+              <h3 class="project-card-title">Youtube Trend Analysis</h3>
+              <p class="project-card-desc">
+                Fetches India's top trending YouTube videos using the YouTube Data API v3 and performs exploratory data analysis with NumPy, Pandas, and Matplotlib. Visualizes engagement patterns, category distribution, publishing trends, and channel performance through interactive insights and data-driven visualizations.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/youtube-trend-analysis" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 6: AI-Generated Voice Detection System -->
+          <div class="project-card-expanded extra-project" data-category="ai-ml speech" data-metrics="Accuracy: 98.4% • MFCC Features: 40 • Ingestion: Base64 MP3 • Latency: 120ms" data-full-desc="A sophisticated multi-language voice classification system built with Python and Scikit-learn. Accepts Base64 encoded audio snippets, extracts Mel-Frequency Cepstral Coefficients (MFCC), spectral centroid, and zero-crossing rates to classify human vs AI-synthesized speech with structured JSON confidence breakdown.">
+            <div class="card-media-wrapper">
+              <img src="./project_voice_detection.png" alt="AI-Generated Voice Detection System">
+              <span class="card-badge badge-orange">Featured ML System</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-learn</span>
+                <span class="tech-chip">Signal Processing</span>
+              </div>
+              <h3 class="project-card-title">AI-Generated Voice Detection System</h3>
+              <p class="project-card-desc">
+                Detects AI-generated voices across languages using machine learning with real-time confidence scoring.
+              </p>
+              <div class="project-actions">
+                <span class="btn-action primary btn-available-soon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Available Soon
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project Card 7: AI-Powered Smart Assistant -->
+          <div class="project-card-expanded extra-project" data-category="speech nlp" data-metrics="Speech Recognition • Multithreaded Async • Task Automation • Gemini API" data-full-desc="An intelligent desktop AI assistant featuring wake-word activation, speech recognition, Gemini-powered conversations, desktop automation, application control, browser automation, and asynchronous background task execution.">
+            <div class="card-media-wrapper">
+              <img src="./project_smart_assistant.png" alt="AI-Powered Smart Assistant">
+              <span class="card-badge badge-purple">VOICE AGENT</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Speech Recognition</span>
+                <span class="tech-chip">Gemini API</span>
+              </div>
+              <h3 class="project-card-title">AI-Powered Smart Assistant</h3>
+              <p class="project-card-desc">
+                An intelligent desktop AI assistant featuring wake-word activation, speech recognition, Gemini-powered conversations, desktop automation, application control, browser automation, and asynchronous background task execution.
+              </p>
+              <div class="project-actions">
+                <span class="btn-action primary btn-available-soon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Available Soon
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- View All Projects Call-To-Action Banner -->
+        <div class="view-all-cta-container" id="view-all-cta">
+          <div class="view-all-cta-card">
+            <h3 class="view-all-cta-title">Want to explore more projects?</h3>
+            <p class="view-all-cta-subtitle">
+              Discover additional machine learning, analytics, and real-world AI applications from my complete portfolio.
+            </p>
+            <button class="btn-primary btn-view-all" id="view-all-btn">
+              <span>View All Projects</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: SYSTEM ARCHITECTURE & ENGINEERING CASE STUDIES
+         ========================================================================== -->
+    <section class="arch-section">
+      <div class="arch-container">
+        
+        <div class="section-tag-pill">
+          <span class="tag-dot"></span>
+          <span>CORE AI CAPABILITIES</span>
+        </div>
+
+        <div class="arch-header-grid">
+          <h2 class="arch-title">
+            Technologies Behind My AI Projects.
+          </h2>
+          <p class="arch-desc">
+            My projects combine machine learning, speech intelligence, backend engineering, APIs, and production-ready engineering practices to build practical AI solutions for real-world applications.
+          </p>
+        </div>
+
+        <div class="arch-cards-grid">
+          
+          <div class="arch-card">
+            <div class="arch-num">01</div>
+            <h3 class="arch-card-title">Voice &amp; Speech AI</h3>
+            <p class="arch-card-desc">
+              AI-generated voice detection, speech recognition, audio processing, and feature extraction for intelligent speech systems.
+            </p>
+          </div>
+
+          <div class="arch-card">
+            <div class="arch-num">02</div>
+            <h3 class="arch-card-title">Natural Language Processing</h3>
+            <p class="arch-card-desc">
+              Resume analysis, PDF text extraction, NLP pipelines, and intelligent document understanding.
+            </p>
+          </div>
+
+          <div class="arch-card">
+            <div class="arch-num">03</div>
+            <h3 class="arch-card-title">Data Analytics &amp; Machine Learning</h3>
+            <p class="arch-card-desc">
+              Data preprocessing, feature engineering, model training, visualization, and predictive analytics.
+            </p>
+          </div>
+
+          <div class="arch-card">
+            <div class="arch-num">04</div>
+            <h3 class="arch-card-title">Backend APIs &amp; Deployment</h3>
+            <p class="arch-card-desc">
+              Develop scalable REST APIs, asynchronous services, and production-ready AI applications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: TECHNICAL STACK MATRIX & REPOSITORIES
+         ========================================================================== -->
+    <section class="stack-section">
+      <div class="stack-container">
+        
+        <div class="section-tag-pill">
+          <span class="tag-dot"></span>
+          <span>TECH STACK &amp; OPEN SOURCE</span>
+        </div>
+
+        <h2 class="stack-title">
+          Technologies I Build With.
+        </h2>
+
+        <div class="stack-grid">
+          
+          <!-- Stack Matrix Card -->
+          <div class="stack-card">
+            <h3 class="stack-card-heading">Core Technology Stack</h3>
+            
+            <div class="matrix-list">
+              <div class="matrix-item">
+                <span class="matrix-label">Programming:</span>
+                <span class="matrix-val">Python • SQL • Java • C++</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Machine Learning:</span>
+                <span class="matrix-val">Scikit-learn • Pandas • NumPy • Matplotlib</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Backend:</span>
+                <span class="matrix-val">Flask • REST APIs • JSON</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Database:</span>
+                <span class="matrix-val">MySQL</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Development:</span>
+                <span class="matrix-val">Git • GitHub • VS Code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Repositories Card -->
+          <div class="repo-card">
+            <div class="repo-card-content">
+              <span class="repo-badge">OPEN SOURCE</span>
+              <h3 class="repo-title">Explore My GitHub Projects</h3>
+              <p class="repo-desc">
+                Browse the source code behind my AI applications, machine learning projects, and production-ready solutions. Every repository reflects clean implementation, practical engineering, and real-world problem solving.
+              </p>
+              <a href="https://github.com/abhash02" target="_blank" rel="noopener noreferrer" class="btn-primary btn-repo">
+                View GitHub Profile
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>© 2026 Abhash Gupta. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close">&times;</button>
+      <div class="modal-content">
+        <div class="modal-media">
+          <img id="modal-img" src="" alt="Project Detail">
+        </div>
+        <div class="modal-details">
+          <span id="modal-category" class="modal-category-text"></span>
+          <h3 id="modal-title" class="modal-title-text"></h3>
+          <p id="modal-desc" class="modal-desc-text"></p>
+
+          <div class="modal-section-block">
+            <span class="modal-block-label">Technologies Used</span>
+            <div id="modal-tech-stack" class="tech-pills-wrap"></div>
+          </div>
+
+          <div class="modal-section-block">
+            <span class="modal-block-label">Performance Metrics &amp; Benchmarks</span>
+            <div id="modal-metrics" class="modal-metrics-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./projects.js"></script>
+</body>
+</html>

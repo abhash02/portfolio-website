@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhash Gupta — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Fixed Canvas background for full-screen 240-frame scroll animation -->
+  <div id="canvas-container">
+    <canvas id="scroll-canvas"></canvas>
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Cool High-End Preloader -->
+  <div id="loader">
+    <div id="loader-progress-bar"></div>
+    <div class="loader-center-brand">
+      <div class="loader-tag">
+        <span class="loader-dot"></span>
+        <span>ABHASH GUPTA — PORTFOLIO</span>
+      </div>
+      <div class="loader-subtitle">INITIALIZING AI SYSTEMS</div>
+    </div>
+    <div id="loader-percentage">0%</div>
+  </div>
+
+  <!-- Navbar - Fixed directly to Viewport -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Abhash Gupta</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="#workflow" class="nav-link">Workflow</a>
+        <a href="#skills" class="nav-link">Skills &amp; Exp</a>
+        <a href="#contact" class="btn-primary nav-contact-btn">
+          Get in touch
+          <span class="btn-arrow">→</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main HTML content overlaying scroll animation -->
+  <div id="content-wrapper">
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-main-grid">
+          <!-- Left Column -->
+          <div class="hero-left">
+            <span class="hero-subtitle">Hey, I'm Abhash Gupta</span>
+            <h1 class="hero-title">AI Engineer</h1>
+          </div>
+
+          <!-- Right Column -->
+          <div class="hero-right">
+            <h2 class="hero-quote">Building intelligent AI systems for<br>real-world problems.</h2>
+            <p class="hero-subtext">I build AI agents, machine learning applications, speech recognition systems, and NLP-powered solutions for practical business applications.</p>
+          </div>
+        </div>
+
+        <!-- Hero 4-Services Grid -->
+        <div class="hero-services">
+          <div class="service-item">
+            <span class="service-num">#01</span>
+            <span class="service-name">Machine Learning</span>
+          </div>
+          <div class="service-item">
+            <span class="service-num">#02</span>
+            <span class="service-name">Speech Recognition</span>
+          </div>
+          <div class="service-item">
+            <span class="service-num">#03</span>
+            <span class="service-name">Natural Language Processing</span>
+          </div>
+          <div class="service-item">
+            <span class="service-num">#04</span>
+            <span class="service-name">Data Analytics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Certifications Glass Card -->
+    <section class="brands-section">
+      <div class="experience-glass-card">
+        
+        <!-- Card Header -->
+        <div class="exp-card-header">
+          <div class="exp-header-title-wrap">
+            <svg class="exp-star-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff5522" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <h3 class="exp-card-title">Experience &amp; Certifications</h3>
+          </div>
+          <div class="exp-header-lines">
+            <span class="line-accent line-accent-1"></span>
+            <span class="line-accent line-accent-2"></span>
+          </div>
+        </div>
+
+        <!-- 2x2 Grid -->
+        <div class="exp-grid-2x2">
+          
+          <!-- Card 1: IBM -->
+          <div class="exp-mini-card">
+            <div class="exp-logo-wrap">
+              <svg width="85" height="32" viewBox="0 0 900 401.15" fill="none">
+                <defs>
+                  <mask id="ibm-stripes" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="401.15">
+                    <rect y="0" width="900" height="27.93" fill="white"/>
+                    <rect y="53.29" width="900" height="27.93" fill="white"/>
+                    <rect y="106.58" width="900" height="27.93" fill="white"/>
+                    <rect y="159.96" width="900" height="27.93" fill="white"/>
+                    <rect y="213.25" width="900" height="27.93" fill="white"/>
+                    <rect y="266.54" width="900" height="27.93" fill="white"/>
+                    <rect y="319.83" width="900" height="27.93" fill="white"/>
+                    <rect y="373.17" width="900" height="27.93" fill="white"/>
+                  </mask>
+                </defs>
+
+                <g fill="#1F70C1" mask="url(#ibm-stripes)">
+                  <!-- Letter I: 8 blue bars, zero black elements -->
+                  <rect x="0" y="0" width="194.43" height="27.93"/>
+                  <rect x="55.47" y="53.29" width="83.4" height="27.93"/>
+                  <rect x="55.47" y="106.58" width="83.4" height="27.93"/>
+                  <rect x="55.47" y="159.96" width="83.4" height="27.93"/>
+                  <rect x="55.47" y="213.25" width="83.4" height="27.93"/>
+                  <rect x="55.47" y="266.54" width="83.4" height="27.93"/>
+                  <rect x="55.47" y="319.83" width="83.4" height="27.93"/>
+                  <rect x="0" y="373.17" width="194.43" height="27.93"/>
+
+                  <!-- Letter B -->
+                  <path d="M 222.17 0 H 429.28 C 484.75 0 534.7 44.45 534.7 106.58 C 534.7 145.45 515 178.73 484.75 194.43 C 523.57 210.13 551.32 248.99 551.32 294.58 C 551.32 356.71 499.71 401.15 429.28 401.15 H 222.17 V 0 Z M 305.57 81.22 V 134.51 H 415.42 C 430.12 134.51 441.97 122.66 441.97 107.86 C 441.97 93.07 430.12 81.22 415.42 81.22 H 305.57 Z M 305.57 266.65 V 319.93 H 429.28 C 444.08 319.93 455.93 308.09 455.93 293.29 C 455.93 278.49 444.08 266.65 429.28 266.65 H 305.57 Z" fill-rule="evenodd"/>
+
+                  <!-- Letter M -->
+                  <polygon points="583.06,0 638.53,0 729.1,248.99 819.67,0 875.14,0 875.14,401.15 819.67,401.15 819.67,152.16 746.85,347.87 711.35,347.87 638.53,152.16 638.53,401.15 583.06,401.15"/>
+                </g>
+              </svg>
+            </div>
+            <div class="exp-card-text">
+              <h4 class="exp-org-name">IBM</h4>
+              <p class="exp-org-sub">AI Intern</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Google Cloud -->
+          <div class="exp-mini-card">
+            <div class="exp-logo-wrap">
+              <svg width="54" height="54" viewBox="0 0 34 30" fill="none">
+                <path fill="#ea4335" d="M21.85,7.41l1,0,2.85-2.85.14-1.21A12.81,12.81,0,0,0,5,9.6a1.55,1.55,0,0,1,1-.06l5.7-.94s.29-.48.44-.45a7.11,7.11,0,0,1,9.73-.74Z"/>
+                <path fill="#4285f4" d="M29.76,9.6a12.84,12.84,0,0,0-3.87-6.24l-4,4A7.11,7.11,0,0,1,24.5,13v.71a3.56,3.56,0,1,1,0,7.12H17.38l-.71.72v4.27l.71.71H24.5A9.26,9.26,0,0,0,29.76,9.6Z"/>
+                <path fill="#34a853" d="M10.25,26.49h7.12v-5.7H10.25a3.54,3.54,0,0,1-1.47-.32l-1,.31L4.91,23.63l-.25,1A9.21,9.21,0,0,0,10.25,26.49Z"/>
+                <path fill="#fbbc05" d="M10.25,8A9.26,9.26,0,0,0,4.66,24.6l4.13-4.13a3.56,3.56,0,1,1,4.71-4.71l4.13-4.13A9.25,9.25,0,0,0,10.25,8Z"/>
+              </svg>
+            </div>
+            <div class="exp-card-text">
+              <h4 class="exp-org-name">Google Cloud</h4>
+              <p class="exp-org-sub">Introduction to<br>Generative AI</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Anaconda -->
+          <div class="exp-mini-card">
+            <div class="exp-logo-wrap">
+              <svg width="54" height="54" viewBox="0 0 100 100" fill="none">
+                <defs>
+                  <mask id="anaconda-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+                    <circle cx="50" cy="50" r="48" fill="white"/>
+                    <circle cx="54" cy="50" r="31" fill="black"/>
+                    <g stroke="black" stroke-width="3.2" stroke-linecap="round">
+                      <path d="M-5 45 L45 -5"/>
+                      <path d="M-5 65 L65 -5"/>
+                      <path d="M-5 85 L85 -5"/>
+                      <path d="M5 105 L105 5"/>
+
+                      <path d="M-5 55 L45 105"/>
+                      <path d="M-5 35 L65 105"/>
+                      <path d="M-5 15 L85 105"/>
+                      <path d="M5 -5 L105 95"/>
+                    </g>
+                    <path d="M42 0 H100 V100 H42 Z" fill="white"/>
+                    <circle cx="54" cy="50" r="31" fill="black"/>
+                  </mask>
+                </defs>
+
+                <circle cx="50" cy="50" r="48" fill="#38A852" mask="url(#anaconda-mask)"/>
+              </svg>
+            </div>
+            <div class="exp-card-text">
+              <h4 class="exp-org-name">Anaconda</h4>
+              <p class="exp-org-sub">Machine Learning<br>with Python</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Deloitte -->
+          <div class="exp-mini-card">
+            <div class="exp-logo-wrap exp-deloitte-wrap">
+              <span class="exp-deloitte-text">Deloitte<span class="exp-deloitte-dot">.</span></span>
+            </div>
+            <div class="exp-card-text">
+              <p class="exp-org-sub exp-sub-only">Data &amp; Cyber<br>Experience</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Summary & Projects Section -->
+    <section id="projects" class="behind-section">
+      <div class="behind-container">
+        
+        <!-- Header area -->
+        <div class="behind-header" id="about">
+          <div class="behind-left">
+            <span class="eyebrow">ABOUT ME</span>
+            <h2 class="behind-title">Building<br>Intelligent AI<br>Solutions</h2>
+          </div>
+
+          <div class="behind-right">
+            <p class="behind-desc">
+              I'm a final-year Computer Science student passionate about building practical AI solutions that create real impact.
+              <br><br>
+              My work focuses on machine learning, speech recognition, NLP, and AI agents, with hands-on experience gained through IBM and personal projects. I enjoy turning complex ideas into clean, scalable applications.
+            </p>
+            <div class="behind-cta">
+              <span class="cta-subtext">Kanpur, Uttar Pradesh, India<br><a href="mailto:abhash252020@gmail.com" style="color: #ff5522; text-decoration: none;">abhash252020@gmail.com</a></span>
+              <a href="#contact" class="btn-primary">
+                Contact Me
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Projects Cards Grid -->
+        <div class="projects-grid">
+          
+          <div class="project-card">
+            <div class="card-image-wrapper">
+              <img src="./project_sentinel.png" alt="Sentinel – Agentic AI Platform">
+              <span class="card-badge badge-purple">AGENTIC AI</span>
+            </div>
+            <div class="project-card-info">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Google ADK</span>
+                <span class="tech-chip">Gemini</span>
+                <span class="tech-chip">Multi-Agent AI</span>
+              </div>
+              <h3 class="project-card-title">Sentinel – Agentic AI Platform</h3>
+              <p class="project-card-desc">Security-first multi-agent AI platform that reviews pull requests, detects vulnerabilities, generates secure code fixes, and supports developer approval workflows.</p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/sentinel-code-reviewer" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="card-image-wrapper">
+              <img src="./project_resume_analyzer.png" alt="AI Resume Analyzer Web Application">
+              <span class="card-badge badge-blue">Flask Web App</span>
+            </div>
+            <div class="project-card-info">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Flask</span>
+                <span class="tech-chip">NLP</span>
+              </div>
+              <h3 class="project-card-title">AI Resume Analyzer Web App</h3>
+              <p class="project-card-desc">Analyzes resumes against job descriptions using ATS scoring, keyword matching, and intelligent skill gap analysis.</p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/ai-resume-analyzer" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="card-image-wrapper">
+              <img src="./project_student_performance.png" alt="Student Performance Prediction System">
+              <span class="card-badge badge-green">ML &amp; React App</span>
+            </div>
+            <div class="project-card-info">
+              <div class="project-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-learn</span>
+                <span class="tech-chip">Flask</span>
+                <span class="tech-chip">React</span>
+              </div>
+              <h3 class="project-card-title">Student Performance Prediction System</h3>
+              <p class="project-card-desc">Predicts student exam performance using machine learning with model comparison, feature engineering, REST APIs, and an interactive React dashboard.</p>
+              <div class="project-actions">
+                <a href="https://github.com/abhash02/student-performance-prediction" target="_blank" rel="noopener noreferrer" class="btn-action primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How I Work Section -->
+    <section id="workflow" class="workflow-section">
+      <div class="workflow-container">
+        
+        <!-- Section Pill -->
+        <div class="section-tag-pill">
+          <span class="tag-dot"></span>
+          <span>HOW I WORK</span>
+        </div>
+
+        <!-- Workflow Header Grid -->
+        <div class="workflow-header-grid">
+          <h2 class="workflow-title">
+            How I Build<br>AI Systems
+          </h2>
+          <p class="workflow-desc">
+            Every AI solution starts with understanding the problem—not the model. I follow a structured engineering process that combines data, machine learning, APIs, and deployment to build scalable, production-ready AI applications.
+          </p>
+        </div>
+
+        <!-- 3x2 Grid Workflow Container -->
+        <div class="timeline-track-container">
+          <div class="timeline-connector-line"></div>
+
+          <div class="timeline-nodes-grid">
+
+            <!-- Step 01 -->
+            <div class="timeline-node-card" data-card-index="0">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">01</span>
+              </div>
+              <span class="node-badge">Research • Planning</span>
+              <h4 class="node-title">Problem Understanding</h4>
+              <ul class="node-bullets">
+                <li>Define objectives</li>
+                <li>Analyze requirements</li>
+                <li>Plan solution</li>
+              </ul>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="timeline-node-card" data-card-index="1">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">02</span>
+              </div>
+              <span class="node-badge">Python • Pandas</span>
+              <h4 class="node-title">Data Collection</h4>
+              <ul class="node-bullets">
+                <li>Gather datasets</li>
+                <li>Clean &amp; preprocess</li>
+                <li>Validate quality</li>
+              </ul>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="timeline-node-card" data-card-index="2">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">03</span>
+              </div>
+              <span class="node-badge">Scikit-learn • TensorFlow</span>
+              <h4 class="node-title">Model Development</h4>
+              <ul class="node-bullets">
+                <li>Build ML models</li>
+                <li>Train &amp; fine-tune</li>
+                <li>Experiment</li>
+              </ul>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="timeline-node-card" data-card-index="3">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">04</span>
+              </div>
+              <span class="node-badge">Metrics • Testing</span>
+              <h4 class="node-title">Evaluation &amp; Optimization</h4>
+              <ul class="node-bullets">
+                <li>Measure performance</li>
+                <li>Optimize accuracy</li>
+                <li>Benchmark results</li>
+              </ul>
+            </div>
+
+            <!-- Step 05 -->
+            <div class="timeline-node-card" data-card-index="4">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">05</span>
+              </div>
+              <span class="node-badge">Gemini API • Flask</span>
+              <h4 class="node-title">AI Integration</h4>
+              <ul class="node-bullets">
+                <li>Integrate APIs</li>
+                <li>Connect AI services</li>
+                <li>Build workflows</li>
+              </ul>
+            </div>
+
+            <!-- Step 06 -->
+            <div class="timeline-node-card" data-card-index="5">
+              <div class="node-circle">
+                <span class="ring-spinner"></span>
+                <span class="node-num">06</span>
+              </div>
+              <span class="node-badge">GitHub • Docker • Vercel</span>
+              <h4 class="node-title">Deployment &amp; Iteration</h4>
+              <ul class="node-bullets">
+                <li>Deploy application</li>
+                <li>Monitor performance</li>
+                <li>Improve continuously</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills, Experience & Education Section -->
+    <section id="skills" class="color-palette-section">
+      <div class="color-palette-container">
+        
+        <!-- Section Pill -->
+        <div class="section-tag-pill">
+          <span class="tag-dot"></span>
+          <span>SKILLS &amp; EXPERIENCE</span>
+        </div>
+
+        <!-- Palette Header -->
+        <h2 class="palette-title">
+          Skills, Experience<br>&amp; Education
+        </h2>
+        <p class="palette-subtitle">
+          My technical stack, AI expertise, professional experience and academic foundation.
+        </p>
+
+        <!-- Color Palette Canvas Display -->
+        <div class="palette-canvas-wrapper">
+          
+          <!-- Central Graphic -->
+          <div class="color-ring-container">
+            <svg class="color-ring-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="neonOrbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00d2ff" />
+                  <stop offset="35%" stop-color="#d946ef" />
+                  <stop offset="70%" stop-color="#ff5522" />
+                  <stop offset="100%" stop-color="#10b981" />
+                </linearGradient>
+                
+                <filter id="neonBlurGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="5" result="blur1" />
+                  <feGaussianBlur stdDeviation="14" result="blur2" />
+                  <feMerge>
+                    <feMergeNode in="blur2" />
+                    <feMergeNode in="blur1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Inner Dotted Concentric Guide Ring -->
+              <circle cx="200" cy="200" r="130" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.5" stroke-dasharray="2 6" />
+
+              <!-- Outer Dotted Concentric Guide Ring -->
+              <circle cx="200" cy="200" r="170" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1.5" stroke-dasharray="3 7" />
+
+              <!-- Neon Glow Backdrop Line -->
+              <circle cx="200" cy="200" r="150" stroke="url(#neonOrbitGrad)" stroke-width="7" opacity="0.65" filter="url(#neonBlurGlow)" />
+
+              <!-- Main Solid Neon Gradient Orbit Line -->
+              <circle cx="200" cy="200" r="150" stroke="url(#neonOrbitGrad)" stroke-width="4.5" />
+
+              <!-- Node 1: Cyan (Top-Left 135°) -->
+              <g class="neon-node node-cyan">
+                <circle cx="94" cy="94" r="16" fill="rgba(0, 210, 255, 0.2)" stroke="#00d2ff" stroke-width="2.5" />
+                <circle cx="94" cy="94" r="8" fill="#00d2ff" />
+                <circle cx="94" cy="94" r="4.5" fill="#ffffff" />
+              </g>
+
+              <!-- Node 2: Magenta (Top-Right 45°) -->
+              <g class="neon-node node-magenta">
+                <circle cx="306" cy="94" r="16" fill="rgba(217, 70, 239, 0.2)" stroke="#d946ef" stroke-width="2.5" />
+                <circle cx="306" cy="94" r="8" fill="#d946ef" />
+                <circle cx="306" cy="94" r="4.5" fill="#ffffff" />
+              </g>
+
+              <!-- Node 3: Orange (Bottom-Right 315°) -->
+              <g class="neon-node node-orange">
+                <circle cx="306" cy="306" r="16" fill="rgba(255, 85, 34, 0.2)" stroke="#ff5522" stroke-width="2.5" />
+                <circle cx="306" cy="306" r="8" fill="#ff5522" />
+                <circle cx="306" cy="306" r="4.5" fill="#ffffff" />
+              </g>
+
+              <!-- Node 4: Green (Bottom-Left 225°) -->
+              <g class="neon-node node-green">
+                <circle cx="94" cy="306" r="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2.5" />
+                <circle cx="94" cy="306" r="8" fill="#10b981" />
+                <circle cx="94" cy="306" r="4.5" fill="#ffffff" />
+              </g>
+
+            </svg>
+          </div>
+
+          <!-- Skill & Experience Cards Grid -->
+          <div class="color-cards-grid">
+            
+            <!-- IBM Internship Card (Top Left) -->
+            <div class="color-card card-dark-accent">
+              <div class="card-top-row">
+                <div class="card-logo-box ibm-logo-box">
+                  <span class="logo-text-ibm">IBM</span>
+                </div>
+                <div class="card-title-group">
+                  <div class="color-card-header">
+                    <span class="color-card-name">IBM</span>
+                    <span class="color-card-close">Jun 2026 – Aug 2026</span>
+                  </div>
+                  <span class="card-role-title role-ibm">AI Intern</span>
+                </div>
+              </div>
+              <ul class="card-bullets bullets-blue">
+                <li>Machine Learning</li>
+                <li>Feature Engineering</li>
+                <li>Model Evaluation</li>
+              </ul>
+            </div>
+
+            <!-- Core Skills Card (Top Right) -->
+            <div class="color-card card-pure-white">
+              <div class="color-card-header">
+                <span class="color-card-name"><span class="title-cyan-dot"></span>ML &amp; Languages</span>
+                <span class="color-card-close close-purple">Stack</span>
+              </div>
+              <div class="skill-rows">
+                <div class="skill-row">
+                  <div class="skill-icon-box box-purple">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  </div>
+                  <div class="skill-text-group">
+                    <span class="group-label label-purple">LANGUAGES</span>
+                    <span class="group-items">Python, SQL, Java, C++</span>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-icon-box box-pink">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e879f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="17" y="3" width="4" height="17"/></svg>
+                  </div>
+                  <div class="skill-text-group">
+                    <span class="group-label label-pink">LIBRARIES</span>
+                    <span class="group-items">Scikit-learn, NumPy, Pandas, Matplotlib</span>
+                  </div>
+                </div>
+
+                <div class="skill-row">
+                  <div class="skill-icon-box box-orange">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                  </div>
+                  <div class="skill-text-group">
+                    <span class="group-label label-orange">FRAMEWORKS</span>
+                    <span class="group-items">TensorFlow, PyTorch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deloitte Simulations Card (Bottom Left) -->
+            <div class="color-card card-blue-accent">
+              <div class="card-top-row">
+                <div class="card-logo-box deloitte-logo-box">
+                  <span class="logo-text-deloitte">D<span class="deloitte-dot">.</span></span>
+                </div>
+                <div class="card-title-group">
+                  <div class="color-card-header">
+                    <span class="color-card-name">Deloitte</span>
+                    <span class="color-card-close">Virtual Experience</span>
+                  </div>
+                  <span class="card-role-title role-green">Data Analytics</span>
+                </div>
+              </div>
+              <ul class="card-bullets bullets-green">
+                <li>Data Analysis</li>
+                <li>Forensic Technology</li>
+                <li>Business Insights</li>
+              </ul>
+            </div>
+
+            <!-- Education & Credentials (Bottom Right) -->
+            <div class="color-card card-deep-bg">
+              <div class="card-top-row">
+                <div class="card-logo-box edu-logo-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="card-title-group">
+                  <div class="color-card-header">
+                    <span class="color-card-name">Education</span>
+                    <span class="color-card-close">2023 – 2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-content">
+                <div class="edu-item">
+                  <span class="group-label label-orange">DEGREE</span>
+                  <p class="edu-degree-text">B.Tech CSE — AKTU</p>
+                </div>
+                <div class="edu-item">
+                  <span class="group-label label-orange">HIGHLIGHTS</span>
+                  <ul class="card-bullets bullets-orange">
+                    <li>IBM AI Internship</li>
+                    <li>Google GenAI</li>
+                    <li>SIH Qualifier</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Floating Action Control Buttons -->
+          <div class="palette-floating-controls">
+            <a href="https://linkedin.com" target="_blank" class="control-btn" title="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/abhash02" target="_blank" rel="noopener noreferrer" class="control-btn" title="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Scale Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        
+        <!-- Header area -->
+        <div class="contact-header">
+          <div class="contact-header-left">
+            <h2 class="contact-big-title">LET'S<br><span class="highlight-title">BUILD</span></h2>
+            <p class="contact-subtext">Let's connect to discuss AI engineering opportunities, innovative projects, research collaborations, or ideas that create real-world impact.</p>
+          </div>
+          <div class="contact-header-right">
+            <div class="lets-talk-pill">
+              <span class="lets-talk-tag">LET'S CONNECT</span>
+              <p class="lets-talk-desc">Open to AI Engineer roles, internships, research collaborations, and exciting AI projects.</p>
+            </div>
+            <h3 class="contact-sub-title">INTELLIGENT AI<br>TOGETHER</h3>
+          </div>
+        </div>
+
+        <!-- Contact Form & Info Grid -->
+        <div class="contact-info-banner">
+          <div class="contact-info-item">
+            <span class="info-label">LOCATION</span>
+            <span class="info-val">Kanpur, Uttar Pradesh, India</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="info-label">EMAIL</span>
+            <a href="mailto:abhash252020@gmail.com" class="info-val info-link">abhash252020@gmail.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="info-label">LINKEDIN</span>
+            <a href="https://www.linkedin.com/in/abhashgupta" target="_blank" rel="noopener noreferrer" class="info-val info-link">linkedin.com/in/abhashgupta</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-grid">
+            
+            <div class="form-group">
+              <label for="name">YOUR NAME*</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">YOUR EMAIL*</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">SUBJECT*</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">YOUR MESSAGE*</label>
+              <textarea id="message" name="message" rows="1" placeholder="Tell me about your project, idea, collaboration, or opportunity..." required></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary btn-submit" id="contact-submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>© 2026 Abhash Gupta. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
